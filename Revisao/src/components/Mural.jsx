@@ -6,7 +6,7 @@ export default function Mural() {
 
   const enviarTweet = () => {
     setTweets([...tweets, novoTweet]);
-    setNovoTweet("Eae, blz?");
+    setNovoTweet("Eae, blz? Vai postar de novo? Muda o texto aí!");
   };
 
   return (
