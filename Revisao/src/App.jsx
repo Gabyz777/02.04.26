@@ -12,6 +12,8 @@ import PuxadorInfinito from "./components/PuxadorInfinito";
 import CaixaVermelha from "./components/CaixaVermelha";
 import AtualizaOcupacao from "./components/AtualizaOcupacao";
 import Catalogo from "./components/Catalogo";
+import PainelVip from "./components/PainelVip";
+import DepositoDuplo from "./components/DepositoDuplo";
 
 function App() {
   return (
@@ -76,9 +78,24 @@ function App() {
       <h1>
         <strong>Exercício 12</strong>
       </h1>
-      <Catalogo />
+      <Catalogo 
+        produtos={[{ id: 1, nome: "Chave" }, 
+                  { id: 2, nome: "Gloss" },
+                  { id: 3, nome: "Brinco" }
+                  ]}/>
       <Separador />
 
+      <h1>
+        <strong>Exercício 13</strong>
+      </h1>
+      <PainelVip isVip/>
+      <Separador />
+
+      <h1>
+        <strong>Exercício 14</strong>
+      </h1>
+      <DepositoDuplo />
+      <Separador />
 
     </>
   );

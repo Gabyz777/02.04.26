@@ -1,4 +1,4 @@
-export default function Catalogo({ produtos }) {
+export default function Catalogo({ produtos = [] }) {
   return (
     <ul>
       {produtos.map((item) => (
